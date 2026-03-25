@@ -1,3 +1,4 @@
+alert("JS 연결됨");
 let num1, num2;
 let score = 0;
 let aiScore = 0;
