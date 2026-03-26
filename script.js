@@ -1,7 +1,7 @@
 let num1, num2;
 let score = 0;
 let aiScore = 0;
-let timeLeft = 60;
+let timeLeft = 70;
 let mode = "";
 let aiInterval;
 let timerInterval;
