@@ -23,7 +23,7 @@ function startGame(selectedMode) {
 
   score = 0;
   aiScore = 0;
-  timeLeft = 30;
+  timeLeft = 60;
 
   document.getElementById("score").innerText = score;
   document.getElementById("aiScore").innerText = aiScore;
