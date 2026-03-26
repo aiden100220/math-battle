@@ -2,6 +2,8 @@ let num1, num2;
 let score = 0;
 let aiScore = 0;
 timeLeft = 70;
+timeleft2 =70;
+
 let mode = "";
 let aiInterval;
 let timerInterval;
@@ -24,10 +26,11 @@ function startGame(selectedMode) {
   score = 0;
   aiScore = 0;
   timeLeft = 60;
-
+  timeleft2 =70;
+  
   document.getElementById("score").innerText = score;
   document.getElementById("aiScore").innerText = aiScore;
-  document.getElementById("timer").innerText = "시간: " + timeLeft;
+  document.getElementById("timer").innerText = "시간: " + timeleft2;
 
   if (mode === "ai") {
     document.getElementById("modeTitle").innerText = "AI 배틀";
@@ -44,10 +47,10 @@ function startGame(selectedMode) {
 
   // 타이머
   timerInterval = setInterval(() => {
-    timeLeft--;
-    document.getElementById("timer").innerText = "시간: " + timeLeft;
+    timeleft2--;
+    document.getElementById("timer").innerText = "시간: " + timeleft2;
 
-    if (timeLeft <= 0) {
+    if (timeleft2 <= 0) {
       endGame();
     }
   }, 1000);
