@@ -48,8 +48,10 @@ function startGame(selectedMode) {
   // 타이머
   timerInterval = setInterval(() => {
     timeleft2--;
-    document.getElementById("timer").innerText = "시간: " + timeleft2;
-
+   
+      // document.getElementById("timer").innerText = "시간: " + timeleft2;
+    document.getElementById("timer").innerText = "aaa: " + timeleft2;
+    
     if (timeleft2 <= 0) {
       endGame();
     }
