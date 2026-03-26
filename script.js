@@ -1,7 +1,7 @@
 let num1, num2;
 let score = 0;
 let aiScore = 0;
-let timeLeft = 30;
+let timeLeft = 60;
 let mode = "";
 let aiInterval;
 let timerInterval;
@@ -23,7 +23,7 @@ function startGame(selectedMode) {
 
   score = 0;
   aiScore = 0;
-  timeLeft = 60;
+  //timeLeft = 60;
 
   document.getElementById("score").innerText = score;
   document.getElementById("aiScore").innerText = aiScore;
